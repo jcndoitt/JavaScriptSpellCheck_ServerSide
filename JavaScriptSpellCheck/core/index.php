@@ -2,12 +2,6 @@
 header('Content-type: text/html; charset=ISO-8859-1');
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS");
-header("Access-Control-Max-Age: 86400");
-header("Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization");
-header("Access-Control-Allow-Headers: X-Requested-With");
 
 //  Freeing up memory where available improoves performance on huge dictionary searches.
 try{ini_set("memory_limit","255M");}catch(Exception $e){}
